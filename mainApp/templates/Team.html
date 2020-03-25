@@ -1,0 +1,350 @@
+<!DOCTYPE html> 
+<html> 
+   
+<head> 
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1"> 
+   
+    <!-- linking font awesome for icons -->
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  
+    <style> 
+        /* Whole html box designing */ 
+        html { 
+            box-sizing: border-box; 
+        } 
+          
+        /* Body width fixing */ 
+        body { 
+            max-width: 100% 
+        } 
+          
+        /* Box sizing depending on parent */ 
+        *, 
+        *:before, 
+        *:after { 
+            box-sizing: inherit; 
+        } 
+          
+        /* Styling column */ 
+        .column { 
+            float: left; 
+            width: 33%; 
+            margin-bottom: 16px; 
+            padding: 5px 10px; 
+        } 
+          
+  
+        /* Column width change depends on screen size */ 
+        @media screen and (max-width: 670px) { 
+            .column { 
+                width: 100%; 
+                text-align: none; 
+            } 
+        } 
+          
+        /* Card designing */ 
+        .card { 
+            background-color: gray; 
+            border: 1px solid black;
+            height:300px; 
+        } 
+          
+        .container { 
+            padding: 0 16px; 
+        } 
+          
+        /* Icon styling */ 
+        .fa { 
+            margin: 10px; 
+            font-size:68px; 
+  
+        } 
+          
+        .fa:hover { 
+            transform: rotateY(180deg); 
+            transition: transform 0.8s; 
+        } 
+          
+        .container::after, 
+        .row::after { 
+            content: ""; 
+            clear: both; 
+            display: table; 
+        } 
+          
+        /* Button designing */ 
+        .button { 
+            border: none; 
+            padding: 8px; 
+            color: white; 
+            background-color: #449D44; 
+            text-align: center; 
+            cursor: pointer; 
+            width: 100%; 
+            margin-bottom: 10px; 
+        } 
+          
+        /* Hover efect on button */ 
+        .button:hover { 
+            background-color: gray; 
+        } 
+
+        
+    </style> 
+</head> 
+   
+<body> 
+    <h1>Documents of Hackathon</h1> 
+    <embed src="GMCS.pdf" type="application/pdf" style="width:100%; height:600px;"><br>
+    <embed src="GMCS.pdf" type="application/pdf" style="width:100%; height:600px;"><br>
+    <embed src="GMCS.pdf" type="application/pdf" style="width:100%; height:600px;"><br>
+
+    <center> 
+        <h1>Meet The Team</h1> 
+        <hr> 
+        <!-- Other members of the team -->
+        
+        <div class="row"> 
+            <div class="column"> 
+                
+                <div class="card" style=" background-image: url(harshul.jpg); background-size: cover;" > 
+                  
+                    <div class="container" style="height: 300px;"> 
+                        <h2 style="color: white;">Harshul Gupta</h2>
+                        <h3><p style="color: white;">Co-ordinator at AMURoboclub</p></h3>
+                        <p style="color: white;">PCB Designing and Fabrication (Using Eagle), Embedded Electronics, Robotics, Proteus Design Suite, Quantum Mechanics.</p>
+                        <p><a class="button" href = "mailto=guptaharshul24com@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                      
+                    </div> 
+                </div> 
+            </div> 
+
+            <div class="column"> 
+                
+                <div class="card" style=" background-image: url(https://scontent.fdel14-1.fna.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/28162320_1602119833217477_1888965713878933446_o.jpg?_nc_cat=101&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=yAQ7sNzmC74AX8U2zRB&_nc_ht=scontent.fdel14-1.fna&_nc_tp=14&oh=6508ab157f53d836acf4bab8df426db7&oe=5E9F8CC1); background-size: cover;" > 
+                  
+                    <div class="container" style="height: 300px;"> 
+                        <h2 style="color: white;">Kakul Shrivastava</h2>
+                    <h3><p style="color: white; font-size: medium;">Co-ordinator at AMURoboclub</p></h3>
+                        <p style="color: white;">Robotics, Embedded Systems, MATLAB, ROS.</p>
+                        <p><a class="button" href = "mailto=kakulshrivastava.1@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                      
+                    </div> 
+                </div> 
+            </div>
+
+            <div class="column"> 
+                
+                <div class="card" style=" background-image: url(aman.jpg); background-size: cover;" > 
+                  
+                    <div class="container" style="height: 300px;"> 
+                        <h2 style="color: white;">Aman Gupta</h2>
+                    <h3><p style="color: white; font-size: medium;">Co-ordinator at AMURoboclub</p></h3>
+                        <p style="color: white;">Product Design and Fabrication, Team Management, Power System, Renewable Energy.</p>
+                        <p><a class="button" href = "mailto=amanguptaamu2013@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                      
+                    </div> 
+                </div> 
+            </div> 
+            
+            <div class="column"> 
+                <div class="card" style="background-image: url(https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/s960x960/44253167_1591726874340382_1163100053112356864_o.jpg?_nc_cat=109&_nc_sid=85a577&_nc_oc=AQlMBgXaX5ecs-1JBwyupPlhKTkz98vUbPMUu1s-FUY7lc9ROUNadJWLr6n9MUe2ZUQ&_nc_ht=scontent.fdel3-1.fna&_nc_tp=7&oh=a94864536e33d4dda13ca922e6452c82&oe=5EA06CAD); background-size: cover;" > 
+                  
+                    <div class="container" style="height: 300px;"> 
+                        <h2 style="color: white;">Rajneesh Sharma</h2>
+                    <h3> <p style="color: white; font-size: medium;">Joint Co-ordinator at AMURoboclub</p></h3>
+                        <p style="color: white;">ML/DL, Full Stack Developement, Networking, Raspberry pi, Computer Vision, NLP, Algorithms.</p>
+                        <p><a class="button" href = "mailto=rajneeshsharma@zhcet.ac.in" style="text-decoration: none; width: 95%;">Contact</a></p>
+                    </div> 
+                </div> 
+            </div> 
+
+            <div class="column"> 
+                <div class="card" style="background-image: url(atul.jpg); background-size: cover;" > 
+                  
+                    <div class="container" style="height: 300px;"> 
+                        <h2 style="color: white;">Atul Deep Yadav</h2>
+                    <h3> <p style="color: white; font-size: medium;">Joint Co-ordinator at AMURoboclub</p></h3>
+                        <p style="color: white;">Specialization lies in the field of CAD, CFD, CAE, Machines and Mechanisms designing, Robot designing and thier motion studies.</p>
+                        <p><a class="button" href = "mailto=atuldeepyadav.ady@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                      
+                    </div> 
+                </div> 
+            </div> 
+
+        <div class="row"> 
+            <div class="column"> 
+                <div class="card" style="background-image: url(https://scontent.fdel14-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/48423559_1925146894249571_1380341947075395584_n.jpg?_nc_cat=106&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=ILXYBOvPyi0AX_lI4as&_nc_ht=scontent.fdel14-1.fna&_nc_tp=14&oh=5509900875ac714293a62fd06c604ee8&oe=5E8E66CA); background-size: cover;"> 
+                   
+                    <div class="container"> 
+                        <h2 style="color: white;">Mayank Gupta</h2>
+                    <h3>  <p  style="color: white;">Joint Co-ordinator at AMURoboclub</p></h3>
+                        <p style="color: white;">Management, MATLAB.</p>
+                        <p><a class="button" href = "mayank.gupta052@gmail.com" style="text-decoration: none; color: white; width: 95%;">Contact</a></p>
+                    </div> 
+                </div> 
+            </div> 
+
+            <div class="row"> 
+                <div class="column"> 
+                    <div class="card" style="background-image: url(https://scontent.fdel29-1.fna.fbcdn.net/v/t1.0-9/cp0/e15/q65/s720x720/44942075_1893506160739907_1474485701763399680_n.jpg?_nc_cat=111&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=vqNUumGFP_kAX-d79wP&_nc_ht=scontent.fdel29-1.fna&_nc_tp=9&oh=1c80454ba090c85b9725778f7f0bf4f8&oe=5E94A6CD); background-size: cover;" > 
+                        
+                        <div class="container"> 
+                            <h2 style="color: white;">Payal Kulshreshtha</h2>
+                        <h3>  <p  style="color: white;">Joint Co-ordinator at AMURoboclub</p></h3>
+                            <p style="color: white;">Robotics, embedded, PCB designing, MATLAB.</p>
+                            <p><a class="button" href = "pkul1998@gmail.com" style="text-decoration: none; color: white; width: 95%;">Contact</a></p>
+                        </div> 
+                    </div> 
+                </div> 
+
+                <div class="row"> 
+                    <div class="column"> 
+                        <div class="card" style="background-image: url(https://scontent.fdel1-3.fna.fbcdn.net/v/t1.0-9/cp0/e15/q65/s851x315/79335662_1436900556468872_8520224197589336064_n.jpg?_nc_cat=111&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=UEhBPFHM-10AX8Weo7K&_nc_ht=scontent.fdel1-3.fna&_nc_tp=9&oh=9b85d8662497638bfb8ac11b93c83c5d&oe=5E994A3B); background-size: cover;" > 
+                            
+                            <div class="container"> 
+                                <h2 style="color: white;">Vivek Raj Singh</h2>
+                            <h3>    <p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                <p style="color: white;">Django, Python, Git/Github Raspberry pi, Computer Vision, NLP, Algorithms, Computer Vision, GSM/GPS, ML, Neural Networks</p>
+                                <p style="color: white;"><a class="button" href = "mailto=vivekrajs3999@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></>
+                            </div> 
+                        </div> 
+                    </div> 
+
+                    <div class="row"> 
+                        <div class="column"> 
+                            <div class="card" style="background-image: url(https://scontent.fdel14-1.fna.fbcdn.net/v/t1.0-9/s960x960/90908188_2520627138197602_8122711848924479488_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_ohc=AKPM8V_9WecAX-L0fzT&_nc_ht=scontent.fdel14-1.fna&_nc_tp=7&oh=2c21454fa665ed3e7e6e6a2802b1f5a4&oe=5EA159BE); background-size: cover;" > 
+                                
+                                <div class="container"> 
+                                    <h2 style="color: white;">Hashir Hameed Niazi</h2>
+                                <h3>    <p style="color: white;">Web/App Developer at AMURoboclub</p></h3>
+                                    <p style="color: white;">Flask, Backend/Frontend Developer, Git/Github</p>
+                                    <p style="color: white;"><a class="button" href = "mailto=hameedhashirniazi@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></>
+                                </div> 
+                            </div> 
+                        </div> 
+
+                    <div class="row"> 
+                        <div class="column"> 
+                            <div class="card" style="background-image: url(shilpy.jpg); background-size: cover;" > 
+                                
+                                <div class="container"> 
+                                    <h2 style="color: white;">Shilpy Varshney</h2>
+                                <h3><p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                    <p style="color: white;">PCB expert, Embedded C, leadership skills and marketing skills.</p>
+                                    <p style="color: white;"><a class="button" href = "mailto=shilpyvarshney2000@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                                </div> 
+                            </div> 
+                        </div>                     
+                        
+                        <div class="row"> 
+                            <div class="column"> 
+                                <div class="card" style="background-image: url(https://media-exp1.licdn.com/dms/image/C5103AQGDyK7Cpizh4g/profile-displayphoto-shrink_200_200/0?e=1590019200&v=beta&t=KUIYX3_MQwp30HMiQ4JCBx2-JV3cxSaSy4aD-ePiLfw); background-size: cover;" > 
+                                 
+                                    <div class="container"> 
+                                        <h2 style="color: white;">Samiksha Agarwal</h2>
+                                    <h3><p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                        <p style="color: white;">nquisitive, energetic, enthusiast learner, with a strong foundation in math, programming, logic. Seeking to leverage solid development skills as a programmer.</p>
+                                        <p><a class="button" href = "mailto=shilpyvarshney2000@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                                        </div> 
+                                </div> 
+                            </div> 
+
+
+                            <div class="row"> 
+                                <div class="column"> 
+                                    <div class="card" style="background-image: url(https://scontent.fbek1-1.fna.fbcdn.net/v/t1.0-9/p960x960/69619051_351763825708597_9052412573034479616_o.jpg?_nc_cat=111&_nc_sid=85a577&_nc_oc=AQmkHbgNvJd_fgaSXP5FmJhgxQJd0peCJ3WxmaxhrJE4clglhtWWm6xNL0u2LH--auDMyABefi6m2Wl3oTlFWwUb&_nc_ht=scontent.fbek1-1.fna&_nc_tp=6&oh=295d17f76326c251f5574ad0e9709082&oe=5E99D075); background-size: cover;" > 
+                                    
+                                        <div class="container"> 
+                                            <h2 style="color: white;">Aniket Yadav</h2>
+                                        <h3><p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                        <p style="color: white;">Machine Learning, Embedded programming and Mech. fabrication.</p>
+                                        <p><a class="button" href = "mailto=aniket.akashamu@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                                    </div> 
+                                    </div> 
+                                </div> 
+
+                                <div class="row"> 
+                                    <div class="column"> 
+                                        <div class="card" style="background-image: url(https://scontent.fjai1-1.fna.fbcdn.net/v/t1.0-9/cp0/e15/q65/s720x720/66773586_468661543944646_173917618250448896_o.jpg?_nc_cat=110&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=kqQ53-aGdtEAX9CJyfa&_nc_ht=scontent.fjai1-1.fna&_nc_tp=9&oh=cac106b66059ec3641ca44079c408163&oe=5E9E883A); background-size: cover;" > 
+                                        
+                                            <div class="container"> 
+                                                <h2 style="color: white;">Sonal Gupta</h2>
+                                            <h3><p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                            <p style="color: white;">Robotics, PCB designing and fabrication, Embedded electronics.</p>
+                                            <p><a class="button" href = "mailto=sonalzhcet@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                                        </div> 
+                                        </div> 
+                                    </div> 
+
+                                    <div class="row"> 
+                                        <div class="column"> 
+                                            <div class="card" style="background-image: url(https://media-exp1.licdn.com/dms/image/C5103AQFyOGwaW6s-Hg/profile-displayphoto-shrink_800_800/0?e=1590624000&v=beta&t=Sk0GW2B46HwHcByqG7ZA4SrrQwG1_6Ru_k707xJYZcI); background-size: cover;" > 
+                                            
+                                                <div class="container"> 
+                                                    <h2 style="color: white;">Yash bhardwaj</h2>
+                                                <h3><p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                                <p style="color: white;">web development, programing.</p>
+                                                <p><a class="button" href = "mailto=yashzhcet@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                                            </div> 
+                                            </div> 
+                                        </div> 
+
+                                    <div class="row"> 
+                                        <div class="column"> 
+                                            <div class="card" style="background-image: url(priyanka_img.jpg); background-size: cover;" > 
+                                            
+                                                <div class="container"> 
+                                                    <h2 style="color: white;">Priyanka Gupta</h2>
+                                                <h3><p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                                <p style="color: white;">PCB designing and Fabrication, embedded electronics.</p>
+                                                <p><a class="button" href = "mailto=priyankaaa3103@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                                            </div> 
+                                            </div> 
+                                        </div> 
+
+                                            <div class="row"> 
+                                                <div class="column"> 
+                                                    <div class="card" style="background-image: url(poorti.JPG); background-size: cover;" > 
+                                                    
+                                                        <div class="container"> 
+                                                            <h2 style="color: white;">Poorti Varshney</h2>
+                                                        <h3><p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                                        <p style="color: white;">PCB designing and Fabrication, embedded electronics.</p>
+                                                        <p><a class="button" href = "mailto=poortivarshney0109@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                                                    </div> 
+                                                    </div> 
+                                                </div>
+
+                                                <div class="row"> 
+                                                    <div class="column"> 
+                                                        <div class="card" style="background-image: url(IMG_20191103_104745.jpg); background-size: cover;" > 
+                                                        
+                                                            <div class="container"> 
+                                                                <h2 style="color: white;">Charu Singh</h2>
+                                                            <h3> <p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                                            <p style="color: white;">MATLAB, Astrophysics, E- Vehicles, Grid integration, Renewable energy.</p>
+                                                            <p><a class="button" href = "mailto=charusingh2022ecee@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                                                        </div> 
+                                                        </div> 
+                                                    </div>
+
+                                                    <div class="row"> 
+                                                        <div class="column"> 
+                                                            <div class="card" > 
+                                                            
+                                                                <div class="container"> 
+                                                                    <h2 style="color: white;">Laiba Sagheer</h2>
+                                                                <h3> <p style="color: white;">Volunteer at AMURoboclub</p></h3>
+                                                                <p style="color: white;">Machine learning , Artificial intelligence , Iot , Robotics.</p>
+                                                                <p><a class="button" href = "mailto=sagheerlaiba124@gmail.com" style="text-decoration: none; width: 95%;">Contact</a></p>
+                                                            </div> 
+                                                            </div> 
+                                                        </div>
+        </div> 
+    </center> 
+</body> 
+   
+</html> 

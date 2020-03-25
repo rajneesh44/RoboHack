@@ -789,3 +789,8 @@ canvas {
   height: 100%;
   background: #000000;
 }
+
+.navbar-custom {
+    color: #FFFFFF;
+    background-color:#000000;
+}

@@ -13,7 +13,7 @@
     <title>ROBO-HACK</title>
 
     <!-- Icons font CSS-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
     <link href="static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- Font special for pages-->
@@ -37,58 +37,84 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
+        <!-- <nav class="navbar transparent navbar-expand-lg navbar-inverse sticky-top"> -->
+      
+  <a class="navbar-brand" href="http://www.amuroboclub.in"><img class="expand" src="{{url_for('static', filename='img/logo.png')}}" id="leftgear" align="middle" height="50" width="50" mergin=0 /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
+    <ul class="navbar-nav">
+     
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Download Rulebook</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../static/pdfs/Software.pdf">Software</a>
+                     <a class="dropdown-item" href="../static/pdfs/Electronics.pdf">Embedded</a>
+                     <a class="dropdown-item" href="../static/pdfs/Mechanical.pdf">Mechanical</a>
+                </div>
+            </div>
+    </ul>
+    <ul class="navbar-nav ">
+    <li class="nav-item active">
+        <a class="nav-link" href="#"><img src="{{url_for('static', filename='img/finallogo.jpg')}}" height="25" width="90"></a>
+    </li>
+    </ul>
+    <!--   <li class="nav-item">
         <a class="nav-link" href="../static/pdfs/Software.pdf">Software</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../static/pdfs/Electronics.pdf">Electronics</a>
+        <a class="nav-link" href="../static/pdfs/Electronics.pdf">Embedded</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../static/pdfs/Mechanical.pdf">Mechanical</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
+      </li> -->
+    <ul class="navbar-nav ml-auto">
+    <div>
+      <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-github"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+    </div>
     </ul>
+
      </div>
-    </nav>   
-    <div style="position: fixed; width: 100%; height: 100%;" id                                    ="particles-js"></div>
-    <div class="page-wrapper p-t-45 p-b-50" style="background: #000000">
+
+    </nav>  
+
+    <div style="position: fixed; width: 100%; height: 100%;" id="particles-js"></div>
+
+<div class="page-wrapper p-t-45 p-b-50" style="background: rgb(0,0,0,0.8)">
 
     
         
         <div class="wrapper wrapper--w790">
-            <div class="card" style="color:rgb(0.2)">
-             <div class="jumbotron bg-transparent">
-                <h1 class="display-4">ROBO-HACK 1.0</h1>
-                <p class="lead">This is an online event organized by <a href="amuroboclub.in">AMURoboclub</a> to bring out the techie in you.
+            <div class="card bg-transparent" >
+             <div class="jumbotron" style="background:rgb(255,255,255,0.4) ">
+               <!--  <h1 class="display-4 justify-content-center xx-large font-weight-bolder text-center" style="font-family: Merriweather; color: #40E0D0; font-weight: 500"><strong>ROBO-HACK 1.0</strong></h1> -->
+                <div class="heading-text" style="font-family: Merriweather; color: #40E0D0; font-size: 90px; border-width: 2px; border-color: solid black; text-shadow: 2px 2px #ff0000;"><strong>ROBO-HACK 1.0</strong></div>
+                <p class="lead" style="color: white">This is an online event organized by <a href="amuroboclub.in" style="color:black"><b>AMURoboclub</a></b> to bring out the techie in you.
                 We aim to make the best use of quarantine, so invest your time in improving your skills and developing a real-life project.  </p>     
                 <br />
-                <strong>Registration Deadline : 27 March 2020 </strong>>
+                <strong >Registration Deadline : 27 March 2020 <br/>
+                    <h3><marquee style="text-shadow:2px 2px 5px yellow;" scroll-amount="6">Exciting Prizes for Winners in each Category.</marquee></h3></strong>
                 <hr class="my-4">           
-                <p style="align-content: center"><strong>SOFTWARE EDITION | ELECTRONICS/EMBEDDED EDITION | MECHANICAL DESIGN EDITION </strong></p> <br />
-                <a class="btn btn-warning btn-right" href="#" role="button">Register Now</a>
-                 <a class="btn btn-warning btn-right" href="#" role="button">Organizing Team</a>
+                <p style="align-items : center"><strong>SOFTWARE EDITION | EMBEDDED EDITION | MECHANICAL DESIGN EDITION </strong></p> <br />
+                <a class="btn btn-warning btn-center" href="#fo" role="button" style="margin-left: 110px ;margin-right:20px">Register Now</a>
+                
+                <a class="btn btn-warning btn-center" href="Team.html" role="button">Organizing Team</a>
             </div>
         </div>
 
         <br />
         <br/>
             <div class="card card-5">
-                <div class="card-heading">
+                <div class="card-heading" id="fo">
                     <h2 class="title">Event Registration Form</h2>
                 </div>
-                <div class="card-body">
+                <div class="card-body" >
                     <form method="POST">
                         <div class="form-row">
                             {{ form.teamname.label(class="name") }}
@@ -268,9 +294,23 @@
                 </div>
             
             </div>
-</div>
         </div>
-    </div>
+        
+</div>
+<div class="card">
+<img src="{{url_for('static', filename='img/time.png')}}" align="middle" />
+</div>
+<div>
+        <footer class="card" style="color:black">
+        
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2020 Copyright: <a href="https://amuroboclub.in">AMURoboclub</a>
+            <h4><strong>Developed by: <a href="https://github.com/HashirGJ8842">Hashir </a>|<a href=" https://github.com/VRS-3999"> Vivek </a>| <a href="https://github.com/Samiksha99">Samiksha </a> |<a href="https://github.com/rajneesh44">Rajneesh </a></strong></h4>
+            <a href="https://mdbootstrap.com/"> </a>
+          </div>
+          <!-- Copyright -->
+        
+        </footer>
 </div>
 
 
@@ -309,6 +349,11 @@
             loadTemplateT()
         }
     });
+
+    $(window).scroll(function() {
+        var theta = $(window).scrollTop() / 10 % Math.PI;
+    $('#leftgear').css({ transform: 'rotate(' + theta + 'rad)' });
+        });
 
     function loadTemplateT(){
 
@@ -362,7 +407,7 @@ particlesJS("particles-js", {
       "value": 100,
       "density": {
         "enable": true,
-        "value_area": 700
+        "value_area": 1000
       }
     },
     "color": {
@@ -408,7 +453,7 @@ particlesJS("particles-js", {
     "move": {
       "enable": true,
       "speed": 2,
-      "direction": "attract",
+      "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",
@@ -442,7 +487,7 @@ particlesJS("particles-js", {
       },
       "bubble": {
         "distance": 400,
-        "size": 40,
+        "size": 50,
         "duration": 2,
         "opacity": 8,
         "speed": 3
