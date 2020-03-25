@@ -776,7 +776,7 @@ input {
 .jumbotron {
    /*background: rgb(200, 54, 54);  This is for ie8 and below */
    background: rgba(200, 54, 54, 0.2); 
-}solid
+}
 
 canvas {
   display: block;
@@ -790,7 +790,11 @@ canvas {
   background: #000000;
 }
 
-.navbar-custom {
-    color: #FFFFFF;
-    background-color:#000000;
+
+
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
